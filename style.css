@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(23, 214, 228);
+}
+
+
+.arrow{
+    border-radius: 50%;
+    transform-origin: bottom;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: black;
+    width: 3px;
+    height: 300px;
+    transform: translateX(-50%) rotate(calc(var(--rotate) * 1deg));
+     
+}
+
+ .hour{
+       width: 15px;
+       height: 200px;
+       background-color: black;
+       position: absolute;
+       left: 49%;
+       z-index: 11;
+}
+
+.minute{
+    width: 10px;
+    height: 250px;
+    background-color: black;
+    left: 49.5%;
+    z-index: 10;
+}
+
+.second{ 
+    background-color: rgb(251, 0, 0);
+} 
+
+
+
+
+.clock{
+   background-color: white;
+   width: 600px;
+   height: 600px;
+   border-radius: 50%;
+   border: 3px solid ;
+   position: relative;
+   margin: auto;
+   
+}
+
+.clock .num{
+    --rotate : 0;
+   font-size: 35px; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(var(--rotate));
+    color: blue;
+    letter-spacing: 5px;
+}
+
+.clock .one { --rotate : 30deg}
+.clock  .two { --rotate : 60deg}
+.clock  .three { --rotate : 90deg}
+.clock  .for { --rotate : 120deg}
+.clock  .five { --rotate : 150deg}
+.clock  .six { --rotate : 180deg}
+.clock  .seven { --rotate : 210deg}
+.clock .eight { --rotate : 240deg}
+.clock .nine { --rotate : 270deg}
+.clock .tan { --rotate : 300deg}
+.clock .eleven { --rotate : 330deg}
+.clock .twelve { --rotate : 360deg}
+
+
+
+
+
+.sircle{
+    position: absolute;
+    left: 47%;
+    bottom: 47%;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background-color: rgb(255, 7, 7);
+    border-radius: 50%;
+    z-index: 14;
+}
